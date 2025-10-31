@@ -30,7 +30,7 @@ namespace    pod-name-12345-abcde    1/1     Running    0    7d    10.100.x.x   
 ```bash
 kubectl get pods -A -o wide > pods-before-drain.txt
 ```
-Измените строчку `grep -v "worker"` в переменной CURRENT на имя вашего воркера.
+Добавьте в переменную `WORKER=` имя вашего воркера
 
 Выполните дрейн ноды
 
